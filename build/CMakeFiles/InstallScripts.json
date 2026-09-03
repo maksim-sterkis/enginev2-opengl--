@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/maksimsterkis/enginev2(opengl?)/build/cmake_install.cmake",
+		"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/cmake_install.cmake",
+		"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
