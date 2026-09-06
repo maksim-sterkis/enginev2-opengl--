@@ -5,6 +5,8 @@
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>
 #include <string>
+#include <vector>
+#include <algorithm>
 
 void ui_init(GLFWwindow* window) {
     IMGUI_CHECKVERSION();
@@ -58,11 +60,35 @@ void ui_draw_debug_window(float delta_time, GLFWwindow* window, RenderState* sta
     
     ImGui::Text("FPS (100ms Avg): %.1f", display_fps);
     ImGui::Text("Frame Time: %.3f ms", display_fps > 0.0f ? (1000.0f / display_fps) : 0.0f);
+
+    // Distribution Tracking for Lows
+    const int MAX_FRAMES = 1000;
+    static float frame_times_arr[MAX_FRAMES];
+    static int frame_idx = 0;
+    static int frame_count_tot = 0;
+    
+    frame_times_arr[frame_idx] = delta_time;
+    frame_idx = (frame_idx + 1) % MAX_FRAMES;
+    if (frame_count_tot < MAX_FRAMES) frame_count_tot++;
+    
+    static std::vector<float> sorted_times;
+    sorted_times.assign(frame_times_arr, frame_times_arr + frame_count_tot);
+    std::sort(sorted_times.begin(), sorted_times.end(), std::greater<float>());
+    
+    if (frame_count_tot > 0) {
+        size_t index_1 = (size_t)(frame_count_tot * 0.01f);
+        size_t index_0_1 = (size_t)(frame_count_tot * 0.001f);
+        float low_1 = sorted_times[index_1];
+        float low_0_1 = sorted_times[index_0_1];
+        
+        ImGui::Text("1%% Low FPS: %.1f", low_1 > 0.0f ? (1.0f / low_1) : 0.0f);
+        ImGui::Text("0.1%% Low FPS: %.1f", low_0_1 > 0.0f ? (1.0f / low_0_1) : 0.0f);
+    }
     
     ImGui::Separator();
     
     // Engine Settings Toggles
-    static int fps_mode = 0; // 0 = Unlimited, 1 = VSync
+    static int fps_mode = 1; // 0 = Unlimited, 1 = VSync
     if (ImGui::Combo("FPS Mode", &fps_mode, "Unlimited\0VSync\0")) {
         glfwSwapInterval(fps_mode);
     }

@@ -29,7 +29,7 @@ int main() {
     return -1;
   }
   glfwMakeContextCurrent(window);
-  glfwSwapInterval(0); // Disable VSync to uncap framerate
+  glfwSwapInterval(1); // Enable VSync by default to prevent thermal throttling
 
   // Initialize GLAD
   if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
@@ -44,17 +44,21 @@ int main() {
   RenderState render_state;
   init_renderer(&render_state);
 
-  float last_time = glfwGetTime();
+  double last_time = glfwGetTime();
 
   bool mouse_locked = false;
   bool p_pressed = false;
   double last_x = 400, last_y = 300;
   bool first_mouse = true;
 
+  if (glfwRawMouseMotionSupported()) {
+      glfwSetInputMode(window, GLFW_RAW_MOUSE_MOTION, GLFW_TRUE);
+  }
+
   // Main loop
   while (!glfwWindowShouldClose(window)) {
-    float current_time = glfwGetTime();
-    float delta_time = current_time - last_time;
+    double current_time = glfwGetTime();
+    float delta_time = static_cast<float>(current_time - last_time);
     last_time = current_time;
 
     // Toggle Mouse Lock with P
