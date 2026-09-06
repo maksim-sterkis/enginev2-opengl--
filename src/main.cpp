@@ -1,5 +1,6 @@
 #include "glad/glad.h"
 #include "renderer.hpp"
+#include "ui.hpp"
 #include <GLFW/glfw3.h>
 #include <iostream>
 
@@ -27,6 +28,7 @@ int main() {
     return -1;
   }
   glfwMakeContextCurrent(window);
+  glfwSwapInterval(0); // Disable VSync to uncap framerate
 
   // Initialize GLAD
   if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
@@ -34,17 +36,39 @@ int main() {
     return -1;
   }
 
+  // Initialize UI layer
+  ui_init(window);
+
   // Initialize our flat data structure
   RenderState render_state;
   init_renderer(&render_state);
 
+  float last_time = glfwGetTime();
+
   // Main loop
   while (!glfwWindowShouldClose(window)) {
+    float current_time = glfwGetTime();
+    float delta_time = current_time - last_time;
+    last_time = current_time;
+
+    // Start UI Frame
+    ui_new_frame();
+
+    glfwGetFramebufferSize(window, &render_state.window_width, &render_state.window_height);
+
+    // Draw main frame
     draw_frame(&render_state);
+
+    // Draw UI
+    ui_draw_debug_window(delta_time, window, &render_state);
+    ui_render();
 
     glfwSwapBuffers(window);
     glfwPollEvents();
   }
+
+  // Shutdown UI
+  ui_shutdown();
 
   glfwTerminate();
   return 0;

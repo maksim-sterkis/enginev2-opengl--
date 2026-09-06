@@ -4,8 +4,10 @@ layout (location = 1) in vec3 aColor;
 
 out vec3 ourColor;
 
+uniform float u_aspectRatio;
+
 void main()
 {
-    gl_Position = vec4(aPos, 1.0);
+    gl_Position = vec4(aPos.x / u_aspectRatio, aPos.y, aPos.z, 1.0);
     ourColor = aColor;
 }

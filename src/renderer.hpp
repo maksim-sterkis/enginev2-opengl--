@@ -4,10 +4,20 @@
 // ---------------------------------------------------------
 // DOD Flat State Struct
 // ---------------------------------------------------------
+enum class ViewportMode {
+    DYNAMIC_FOV,
+    FORCED_16_9
+};
+
 struct RenderState {
     GLuint vao;
     GLuint vbo;
     GLuint shader_program;
+    GLuint u_aspectRatio_loc;
+    
+    int window_width = 800;
+    int window_height = 600;
+    ViewportMode viewport_mode = ViewportMode::DYNAMIC_FOV;
 };
 
 // ---------------------------------------------------------
