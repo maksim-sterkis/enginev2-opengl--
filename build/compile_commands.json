@@ -1,0 +1,152 @@
+[
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build",
+  "command": "/usr/bin/c++  -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=gnu++17 -arch arm64 -o CMakeFiles/EngineV2.dir/src/main.cpp.o -c \"/Users/maksimsterkis/enginev2(opengl?)/src/main.cpp\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/src/main.cpp",
+  "output": "CMakeFiles/EngineV2.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build",
+  "command": "/usr/bin/c++  -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=gnu++17 -arch arm64 -o CMakeFiles/EngineV2.dir/src/renderer.cpp.o -c \"/Users/maksimsterkis/enginev2(opengl?)/src/renderer.cpp\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/src/renderer.cpp",
+  "output": "CMakeFiles/EngineV2.dir/src/renderer.cpp.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build",
+  "command": "/usr/bin/c++  -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -std=gnu++17 -arch arm64 -o CMakeFiles/EngineV2.dir/src/shader.cpp.o -c \"/Users/maksimsterkis/enginev2(opengl?)/src/shader.cpp\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/src/shader.cpp",
+  "output": "CMakeFiles/EngineV2.dir/src/shader.cpp.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build",
+  "command": "/usr/bin/cc  -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -arch arm64 -o CMakeFiles/EngineV2.dir/src/glad/glad.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/src/glad/glad.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/src/glad/glad.c",
+  "output": "CMakeFiles/EngineV2.dir/src/glad/glad.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/context.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/context.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/init.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/init.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/input.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/input.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/monitor.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/monitor.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/platform.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/platform.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/platform.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/platform.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/vulkan.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/vulkan.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/window.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/window.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/egl_context.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/egl_context.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/osmesa_context.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/osmesa_context.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_init.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/null_init.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/null_init.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/null_init.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_monitor.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/null_monitor.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/null_monitor.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_window.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/null_window.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/null_window.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/null_window.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_joystick.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/null_joystick.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/null_joystick.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_time.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/cocoa_time.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/cocoa_time.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/cocoa_time.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_module.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/posix_module.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/posix_module.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/posix_module.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/posix_thread.c\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/posix_thread.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_init.m.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/cocoa_init.m\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/cocoa_init.m",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_joystick.m.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/cocoa_joystick.m\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/cocoa_joystick.m",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/cocoa_monitor.m\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/cocoa_monitor.m",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_window.m.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/cocoa_window.m\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/cocoa_window.m",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
+},
+{
+  "directory": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src",
+  "command": "/usr/bin/cc -D_GLFW_COCOA -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/include\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src\" -I\"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-build/src\" -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/nsgl_context.m.o -c \"/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/nsgl_context.m\"",
+  "file": "/Users/maksimsterkis/enginev2(opengl?)/build/_deps/glfw-src/src/nsgl_context.m",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
+}
+]

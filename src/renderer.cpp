@@ -1,5 +1,5 @@
-#include "renderer.h"
-#include "shader.h"
+#include "renderer.hpp"
+#include "shader.hpp"
 
 void init_renderer(RenderState* state) {
     // Compile and assign shader
