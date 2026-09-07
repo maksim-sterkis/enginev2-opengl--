@@ -1,6 +1,8 @@
 #include "glad/glad.h"
 #include "renderer.hpp"
 #include "ui.hpp"
+#include "assets.hpp"
+#include "ecs.hpp"
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <cmath>
@@ -43,6 +45,31 @@ int main() {
   // Initialize our flat data structure
   RenderState render_state;
   init_renderer(&render_state);
+
+  AssetPool asset_pool;
+  assets_init(&asset_pool);
+
+  ECS ecs;
+  ecs_init(&ecs);
+
+  // Load Default Assets
+  uint32_t cube_mesh = assets_load_obj(&asset_pool, "assets/cube.obj", render_state.instance_vbo);
+  uint32_t crate_tex = assets_load_texture(&asset_pool, "assets/texture.jpg");
+
+  // Spawn 10,000 entities for a stress test
+  int grid_size = 100;
+  float spacing = 2.0f;
+  for (int x = -grid_size / 2; x < grid_size / 2; x++) {
+      for (int z = -grid_size / 2; z < grid_size / 2; z++) {
+          uint32_t ent = ecs_create_entity(&ecs);
+          ecs.render_mesh_ids[ent] = cube_mesh;
+          ecs.render_texture_ids[ent] = crate_tex;
+          
+          // Add some cool sine-wave vertical variance
+          float y_pos = (sin(x * 0.2f) + cos(z * 0.2f)) * 2.0f;
+          ecs.positions[ent] = glm::vec3(x * spacing, y_pos - 5.0f, z * spacing); // Move down a bit so we spawn above them
+      }
+  }
 
   double last_time = glfwGetTime();
 
@@ -134,7 +161,7 @@ int main() {
     glfwGetFramebufferSize(window, &render_state.window_width, &render_state.window_height);
 
     // Draw main frame
-    draw_frame(&render_state);
+    draw_frame(&render_state, &ecs, &asset_pool);
 
     // Draw UI
     ui_draw_debug_window(delta_time, window, &render_state);

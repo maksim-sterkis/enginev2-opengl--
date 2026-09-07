@@ -2,10 +2,9 @@
 #include "glad/glad.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include "assets.hpp"
+#include "ecs.hpp"
 
-// ---------------------------------------------------------
-// DOD Flat State Struct
-// ---------------------------------------------------------
 enum class ViewportMode {
     DYNAMIC_FOV,
     FORCED_16_9
@@ -21,19 +20,13 @@ struct Camera {
     float sensitivity = 0.1f;
 };
 
-struct Mesh {
-    GLuint vao = 0;
-    GLuint vbo = 0;
-    GLuint ebo = 0;
-    GLuint texture_id = 0;
-    int index_count = 0;
-};
-
 struct RenderState {
-    Mesh main_mesh;
     GLuint shader_program;
     GLuint u_view_loc;
     GLuint u_proj_loc;
+    
+    GLuint instance_vbo = 0;
+    int max_instances = 100000; // Room for 100k entities per batch
     
     int window_width = 800;
     int window_height = 600;
@@ -42,12 +35,5 @@ struct RenderState {
     Camera camera;
 };
 
-// ---------------------------------------------------------
-// Initialize DOD Render State
-// ---------------------------------------------------------
 void init_renderer(RenderState* state);
-
-// ---------------------------------------------------------
-// Execute Draw Call
-// ---------------------------------------------------------
-void draw_frame(const RenderState* state);
+void draw_frame(const RenderState* state, const ECS* ecs, const AssetPool* pool);
